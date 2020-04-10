@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Crie Senhas Seguras</h1>
+    </header>
+    <div>
+        <p>Escreva sua senha abaixo e clique na opção desejada:</p>
     </div>
+    <div id="msgBox">
+        <input type="text" id="inputMsg" placeholder="Escreva sua senha aqui" required>
+    </div>
+    <div id="desloc">
+        <p>Digite o número correspondente ao deslocamento:</p>
+        <input type="number" id="offset" required>
+    </div>
+    <div class="botoes">
+        <button class="button" type="submit" id="btCipher">Criptografar</button>
+        <button class="button" type="submit" id="btDecipher">Descriptografar</button>
+        <button class="button" type="reset" id="clear">Limpar</button>
+    </div>
+    <div id="result">
+    </div>
+    <footer>
+        <p>&copy; Camila Roque</p>
+    </footer>
     <script src="index.js" type="module"></script>
-  </body>
+</body>
+
 </html>
