@@ -29,6 +29,7 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 Senhas Seguras
 para criar sua senha segura clique aqui
+<<<<<<< HEAD
 
 ## Objetivo
 
@@ -45,3 +46,22 @@ Copie e utilize sua senha onde desejar!
 ## Usuários
 
 Pessoas de todas as idades, que queiram proteger suas contas sem criar senhas óbvias.
+=======
+
+## Objetivo
+
+Um site onde você pode criar senhas seguras para seu e-mail, redes sociais, etc, fugir das senhas óbvias e não ter mais suas contas “roubadas”.
+
+## Como utilizar
+
+Acesse o site
+Digite sua senha a ser cifrada ou decifrada no campo correspondente
+Digite o número de deslocamento
+Clique para cifrar ou decifrar
+Copie e utilize sua senha onde desejar!
+
+## Usuários
+
+Pessoas de todas as idades, que queiram proteger suas contas sem criar senhas óbvias.
+
+>>>>>>> 0504e5b7814b0a16099fd5a418d23759f1a04597
