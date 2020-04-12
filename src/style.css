@@ -1,6 +1,6 @@
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgb(233, 180, 211))) fixed;
+  background: linear-gradient(#00000033, #e9b4d3, #00000033);
   text-align: center;
   font-family: 'Graphik-Regular','Gotham SSm A','Gotham SSm B','Helvetica Neue',Helvetica,Arial,sans-serif;
   margin-top: 60px;
@@ -76,5 +76,5 @@ p {
 footer {
   font-size: small;
   margin-top: 60px;
-  
+  color: #06738f  
 }
