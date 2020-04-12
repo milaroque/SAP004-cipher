@@ -46,7 +46,7 @@ Copie e utilize sua senha onde desejar!
 ## Usuários
 
 Pessoas de todas as idades, que queiram proteger suas contas sem criar senhas óbvias.
-=======
+
 
 ## Objetivo
 
@@ -64,4 +64,4 @@ Copie e utilize sua senha onde desejar!
 
 Pessoas de todas as idades, que queiram proteger suas contas sem criar senhas óbvias.
 
->>>>>>> 0504e5b7814b0a16099fd5a418d23759f1a04597
+
