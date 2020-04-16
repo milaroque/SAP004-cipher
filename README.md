@@ -27,10 +27,6 @@ com facilidade e não oferecem muita segurança na comunição, mas a cifra de C
 muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
-Senhas Seguras
-para criar sua senha segura clique aqui
-<<<<<<< HEAD
-
 ## Objetivo
 
 Um site onde você pode criar senhas seguras para seu e-mail, redes sociais, etc, fugir das senhas óbvias e não ter mais suas contas “roubadas”.
