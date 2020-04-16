@@ -43,21 +43,3 @@ Copie e utilize sua senha onde desejar!
 
 Pessoas de todas as idades, que queiram proteger suas contas sem criar senhas óbvias.
 
-
-## Objetivo
-
-Um site onde você pode criar senhas seguras para seu e-mail, redes sociais, etc, fugir das senhas óbvias e não ter mais suas contas “roubadas”.
-
-## Como utilizar
-
-Acesse o site
-Digite sua senha a ser cifrada ou decifrada no campo correspondente
-Digite o número de deslocamento
-Clique para cifrar ou decifrar
-Copie e utilize sua senha onde desejar!
-
-## Usuários
-
-Pessoas de todas as idades, que queiram proteger suas contas sem criar senhas óbvias.
-
-
