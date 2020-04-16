@@ -33,11 +33,11 @@ Um site onde você pode criar senhas seguras para seu e-mail, redes sociais, etc
 
 ## Como utilizar
 
-Acesse o site
-Digite sua senha a ser cifrada ou decifrada no campo correspondente
-Digite o número de deslocamento
-Clique para cifrar ou decifrar
-Copie e utilize sua senha onde desejar!
+* Acesse o site
+* Digite sua senha a ser cifrada ou decifrada no campo correspondente
+* Digite o número de deslocamento
+* Clique para cifrar ou decifrar
+* Copie e utilize sua senha onde desejar!
 
 ## Usuários
 
