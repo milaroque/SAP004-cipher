@@ -1,47 +1,51 @@
 const cipher = {
-    encode: function (desloc, getMsg) {
-        if (typeof getMsg !== "string") {
-            throw new TypeError();
+    encode: function (displacement, message) {
+        if (typeof message !== "string") {
+            throw new TypeError("must be a string");
         }
 
         let msgBox = "";
         let resCipher = "";
-        let deslocNumber;
+        const lettersAlphabet = 26;
+        let displacementNumber;
 
-        for (let a = 0; a < getMsg.length; a++) {
-            msgBox = getMsg[a];
-
-            if (msgBox.charCodeAt(0) > 64 && msgBox.charCodeAt(0) < 91) {
-                deslocNumber = (((msgBox.charCodeAt(0) - 65 + desloc) % 26) + 65);
-                resCipher += String.fromCharCode(deslocNumber);
-            } else if (msgBox.charCodeAt(0) > 96 && msgBox.charCodeAt(0) < 123) {
-                deslocNumber = (((msgBox.charCodeAt(0) - 97 + desloc) % 26) + 97);
-                resCipher += String.fromCharCode(deslocNumber);
+        for (let a = 0; a < message.length; a++) {
+            msgBox = message[a];
+            if (msgBox.charCodeAt(0) >= "a".charCodeAt() && msgBox.charCodeAt(0) <= "z".charCodeAt()) {
+                displacementNumber = (((msgBox.charCodeAt(0) - "a".charCodeAt() + displacement) % lettersAlphabet) + "a".charCodeAt());
+                resCipher += String.fromCharCode(displacementNumber);
+            } else if (msgBox.charCodeAt(0) >= "A".charCodeAt() && msgBox.charCodeAt(0) <= "Z".charCodeAt()) {
+                displacementNumber = (((msgBox.charCodeAt(0) - "A".charCodeAt() + displacement) % lettersAlphabet) + "A".charCodeAt());
+                resCipher += String.fromCharCode(displacementNumber);
             } else {
-                deslocNumber = (msgBox.charCodeAt(0));
-                resCipher += String.fromCharCode(deslocNumber);
+                displacementNumber = (msgBox.charCodeAt(0));
+                resCipher += String.fromCharCode(displacementNumber);
             }
         }
         return resCipher;
 
     },
-    decode: function (desloc, getMsg) {
+    decode: function (displacement, message) {
+        if (typeof message !== "string") {
+            throw new TypeError("must be a string");
+        }
        
         let msgBox = "";
         let resDecipher = "";
-        let deslocNumber;
+        const lettersAlphabet = 26;
+        let displacementNumber;
 
-        for (let a = 0; a < getMsg.length; a++) {
-            msgBox = getMsg[a];
-            if (msgBox.charCodeAt(0) > 64 && msgBox.charCodeAt(0) < 91) {
-                deslocNumber = (((msgBox.charCodeAt(0) - 90 - desloc) % 26) + 90);
-                resDecipher += String.fromCharCode(deslocNumber);
-            } else if (msgBox.charCodeAt(0) > 96 && msgBox.charCodeAt(0) < 123) {
-                deslocNumber = (((msgBox.charCodeAt(0) - 122 - desloc) % 26) + 122);
-                resDecipher += String.fromCharCode(deslocNumber);
+        for (let a = 0; a < message.length; a++) {
+            msgBox = message[a];
+            if (msgBox.charCodeAt(0) >= "a".charCodeAt() && msgBox.charCodeAt(0) <= "z".charCodeAt()) {
+                displacementNumber = (((msgBox.charCodeAt(0) - "z".charCodeAt() - displacement) % lettersAlphabet) + "z".charCodeAt());
+                resDecipher += String.fromCharCode(displacementNumber);
+            } else if (msgBox.charCodeAt(0) >= "A".charCodeAt() && msgBox.charCodeAt(0) <= "Z".charCodeAt()) {
+                displacementNumber = (((msgBox.charCodeAt(0) - "Z".charCodeAt() - displacement) % lettersAlphabet) + "Z".charCodeAt());
+                resDecipher += String.fromCharCode(displacementNumber);
             } else {
-                deslocNumber = (msgBox.charCodeAt(0));
-                resDecipher += String.fromCharCode(deslocNumber);
+                displacementNumber = (msgBox.charCodeAt(0));
+                resDecipher += String.fromCharCode(displacementNumber);
             }
         }
         return resDecipher;

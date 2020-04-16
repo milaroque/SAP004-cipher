@@ -1,42 +1,42 @@
 import cipher from './cipher.js';
-document.getElementById("btCipher").disabled = true;
-document.getElementById("btDecipher").disabled = true;
+document.getElementById("bt-cipher").disabled = true;
+document.getElementById("bt-decipher").disabled = true;
 
-document.getElementById("inputMsg", "offset").addEventListener("input", enableButtons);
+document.getElementById("input-msg", "offset").addEventListener("input", enableButtons);
 
 function enableButtons() {
-  if (document.getElementById("inputMsg").value !== "" || document.getElementById("offset").value !== "") {
-    document.getElementById("btCipher").disabled = false;
-    document.getElementById("btDecipher").disabled = false;
+  if (document.getElementById("input-msg").value !== "" || document.getElementById("offset").value !== "") {
+    document.getElementById("bt-cipher").disabled = false;
+    document.getElementById("bt-decipher").disabled = false;
   } else {
-    document.getElementById('btCipher').disabled = true;
-    document.getElementById('btDecipher').disabled = true;
+    document.getElementById('bt-cipher').disabled = true;
+    document.getElementById('bt-decipher').disabled = true;
   }
 }
 
-document.getElementById("btCipher").addEventListener("click", cifrar);
-document.getElementById("btDecipher").addEventListener("click", decifrar);
-document.getElementById("clear").addEventListener("click", limpar);
+document.getElementById("bt-cipher").addEventListener("click", crypto);
+document.getElementById("bt-decipher").addEventListener("click", decrypto);
+document.getElementById("clear").addEventListener("click", clear);
 
-function cifrar() {
-  let getMsg = document.getElementById("inputMsg").value;
-  let desloc = parseInt(document.getElementById('offset').value);
-  let encodeMsg = cipher.encode(desloc, getMsg);
+function crypto() {
+  let message = document.getElementById("input-msg").value;
+  let displacement = parseInt(document.getElementById('offset').value);
+  let encodeMsg = cipher.encode(displacement, message);
 
   document.getElementById("result").innerHTML = `Esta é a sua senha Criptografada: <br><br><strong>${encodeMsg}</strong>`
 }
 
-function decifrar() {
-  let getMsg = document.getElementById("inputMsg").value;
-  let desloc = parseInt(document.getElementById('offset').value);
-  let decodeMsg = cipher.decode(desloc, getMsg);
+function decrypto() {
+  let message = document.getElementById("input-msg").value;
+  let displacement = parseInt(document.getElementById('offset').value);
+  let decodeMsg = cipher.decode(displacement, message);
 
   document.getElementById("result").innerHTML = `Esta é a sua senha Descriptografada: <br><br><strong>${decodeMsg}</strong>`
 }
 
-function limpar() {
-  if (document.getElementById("inputMsg").value !== "" || document.getElementById("offset").value !== "" || document.getElementById("result").innerHTML.value !== "") {
-    document.getElementById("inputMsg").value = "";
+function clear() {
+  if (document.getElementById("input-msg").value !== "" || document.getElementById("offset").value !== "" || document.getElementById("result").innerHTML.value !== "") {
+    document.getElementById("input-msg").value = "";
     document.getElementById("offset").value = "";
     document.getElementById("result").innerHTML = "";
     enableButtons();

@@ -18,7 +18,7 @@ p {
   font-size: larger;
 }
 
-#inputMsg {
+input {
   height: 15px;
   width: 400px;
   margin: 1% 0 2% 0;
@@ -32,17 +32,12 @@ p {
   overflow: hidden;
 }
 
+#inputMsg {
+  width: 400px;
+}
+
 #offset {
-  height: 15px;
   width: 50px;
-  margin: 1% 0 2% 0;
-  padding: 1%;
-  font-weight: normal;
-  font-size: 18px;
-  border: 1.5px solid #1AA6B7;
-  border-radius: 5px;
-  outline: none;
-  overflow: hidden;
 }
 
 .button {
